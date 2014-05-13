@@ -3,6 +3,7 @@
 namespace WikiLanka\FacebookBundle\Controller;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+use Symfony\Component\PropertyAccess\PropertyAccess;
 
 class StatusController extends Controller
 {
@@ -56,12 +57,22 @@ class StatusController extends Controller
           CURLOPT_VERBOSE => true
        ));
         $result = curl_exec($ch);
+       
+        
+        
         //$result = "Status Updated";
         }
         
         else{
+            
             $result = $err;
+            return $this->render('WikiLankaFacebookBundle:Result:Error.html.twig', array('message' => $contents));
         }
-        return $this->render('WikiLankaFacebookBundle:Result:success.html.twig', array('message' => $result));
+  
+        if(strpos($result,'id') !== false){
+            return $this->render('WikiLankaFacebookBundle:Result:sucess.html.twig', array('message' => $result));
+        }
+        
+        return $this->render('WikiLankaFacebookBundle:Result:Error.html.twig', array('message' => $result));
     }
 }

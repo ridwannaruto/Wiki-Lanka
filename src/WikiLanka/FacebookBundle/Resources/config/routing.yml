@@ -13,3 +13,7 @@ renewToken:
 connectFacebook:
     pattern:  /connect
     defaults: { _controller: WikiLankaFacebookBundle:Connection:connect}
+    
+testSuccess:
+    pattern: /test
+    defaults: { _controller: WikiLankaFacebookBundle:Status:test}

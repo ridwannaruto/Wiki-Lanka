@@ -37,7 +37,7 @@
                     <div class="headline"></div>
                     <!-- Contact form -->
                    
-                    <form id="contact" class="span6 offset2 pull-right" action="{{path('updateStatus')}}">
+                    <form id="contact" class="span6 offset2 pull-right" action="{{path('updateStatus')}}" method="GET">
                         
                         <a href="#"><i class="icon-remove icon-2x pull-right"></i></a>
                          <br>
@@ -49,6 +49,7 @@
                         <textarea id="text" class="input-block-level" name="status"></textarea>
                         <input name="user" value="{{user}}" hidden/>
                         <button type="submit" class="btn btn-block">Update</button>
+                        
                         <!-- Form alerts -->
                     </form><!-- / Form - content -->
                     <!-- Google Map -->
