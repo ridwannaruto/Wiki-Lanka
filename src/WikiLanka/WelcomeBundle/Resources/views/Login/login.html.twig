@@ -1,0 +1,25 @@
+{% extends 'WikiLankaWelcomeBundle:Login:parent.html.twig' %}
+{% block content %}
+<p align="center">
+    <strong> <font color="red"> {{message}} </font></strong>
+</p>
+<form id="form" class="form-1" method="POST" action="{{path('login_user')}}" >
+    <p class="field">
+        <input type="email" name="login" placeholder="Email address" required>
+        <i class="icon-user icon-large"></i>
+    </p>
+    <p class="field">
+        <input type="password" name="access" placeholder="Password" required>
+        <i class="icon-lock icon-large"></i>
+    </p>
+    <p class="submit">
+        <button type="submit" name="submit"><i class="icon-arrow-right icon-large"></i></button>
+    </p>
+</form>
+<p align="center">
+<a href="forgot">Forgot Password?</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="register">Not Registered?</a>
+</p>
+
+
+
+{% endblock %}

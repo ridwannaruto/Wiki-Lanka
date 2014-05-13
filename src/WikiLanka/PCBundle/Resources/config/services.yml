@@ -1,0 +1,7 @@
+parameters:
+#    wiki_lanka_pc.example.class: WikiLanka\PCBundle\Example
+
+services:
+#    wiki_lanka_pc.example:
+#        class: %wiki_lanka_pc.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

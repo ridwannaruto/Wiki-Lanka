@@ -1,0 +1,15 @@
+updateStatus:
+    pattern: /update
+    defaults: { _controller: WikiLankaFacebookBundle:Status:update }
+
+shareLocation:
+    pattern: /share
+    defaults: { _controller: WikiLankaFacebookBundle:Location:share }
+
+renewToken:
+    pattern: /renew
+    defaults: { _controller: WikiLankaFacebookBundle:Token:renew }
+    
+connectFacebook:
+    pattern:  /connect
+    defaults: { _controller: WikiLankaFacebookBundle:Connection:connect}

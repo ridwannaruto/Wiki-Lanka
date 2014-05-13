@@ -1,0 +1,40 @@
+{% extends 'WikiLankaWelcomeBundle:Login:parent.html.twig' %}
+{% block content %}
+<h3 align="center">Create Account </h3>
+<form class="form-4" method="POST" action="{{path('add_user')}}" data-validation="parsley">
+        
+    <p>
+         <input type="text" name="firstname" placeholder="first name" required>
+    </p>
+    
+    <p>
+         <input type="text" name="lastname" placeholder="last name" required>
+    </p>
+    
+    <p>
+         <input type="email" name="username" placeholder="email address" required data-trigger="change" data-type="email">
+    </p>
+    <p>
+        <input id="password" type="password" name='password' placeholder="password" required> 
+    </p>
+    <p>
+        <input id ="repassword" type="password" name='repassword' placeholder="retype password" required > 
+    </p>
+
+    <p>
+        <input type="submit" name="submit" value="Continue">
+    </p>  
+    
+    <p>
+         <input type="text" name="access" visibility="false" value='{{access}}' required hidden>
+    </p>
+    
+    <p>
+         <input type="number" name="fbUser" value='{{fbUser}}'required hidden>
+    </p>
+    
+</form>	
+
+
+
+{% endblock %}

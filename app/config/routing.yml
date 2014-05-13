@@ -1,0 +1,24 @@
+wiki_lanka_email:
+    resource: "@WikiLankaEmailBundle/Resources/config/routing.yml"
+    prefix:   /
+
+wiki_lanka_entity:
+    resource: "@WikiLankaEntityBundle/Resources/config/routing.yml"
+    prefix:   /
+
+wiki_lanka_pc:
+    resource: "@WikiLankaPCBundle/Resources/config/routing.yml"
+    prefix:   /
+
+wiki_lanka_mobile:
+    resource: "@WikiLankaMobileBundle/Resources/config/routing.yml"
+    prefix:   /
+
+wiki_lanka_facebook:
+    resource: "@WikiLankaFacebookBundle/Resources/config/routing.yml"
+    prefix:   /
+
+wiki_lanka_welcome:
+    resource: "@WikiLankaWelcomeBundle/Resources/config/routing.yml"
+    prefix:   /
+

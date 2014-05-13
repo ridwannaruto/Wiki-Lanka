@@ -1,0 +1,32 @@
+start:
+    pattern:  /index
+    defaults: { _controller: WikiLankaWelcomeBundle:Index:index }
+
+forgot_password:
+    pattern:  /forgot
+    defaults: { _controller: WikiLankaWelcomeBundle:Index:forgot }
+    
+register_new:
+    pattern:  /register
+    defaults: { _controller: WikiLankaWelcomeBundle:Index:register}
+    
+add_user:
+    pattern:  /add
+    defaults: { _controller: WikiLankaWelcomeBundle:Add:add}
+    
+activate_user:
+    pattern:  /activate/kIBuibuibubuiUIbub89y89NIUBuibib89gioGTtgionigbjkbbkjbiuuyvIU6fvbuiklibvytcvui/{id}/unvdksbginHihuiguib6757niUIBBHTTP
+    defaults: { _controller: WikiLankaWelcomeBundle:Add:activate}
+
+delete_user:
+    pattern:  /delete/MIonnoim24moinionnoinIOONINqer9891ytcvui/{id}/DELbiubuibuB8y89yhini
+    defaults: { _controller: WikiLankaWelcomeBundle:Add:delete}
+    
+    
+login_user:
+    pattern:  /login
+    defaults: { _controller: WikiLankaWelcomeBundle:Index:login}
+    
+    
+
+    

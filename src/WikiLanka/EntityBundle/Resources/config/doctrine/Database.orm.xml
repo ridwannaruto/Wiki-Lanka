@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="WikiLanka\EntityBundle\Entity\Database" table="database">
+    <indexes>
+      <index name="mobile" columns="mobile"/>
+    </indexes>
+    <unique-constraints>
+      <unique-constraint name="token" columns="token"/>
+      <unique-constraint name="token_2" columns="token,mobile"/>
+    </unique-constraints>
+    <id name="id" type="bigint" column="ID">
+      <generator strategy="IDENTITY"/>
+    </id>
+    <field name="user" type="bigint" column="user" nullable="false"/>
+    <field name="token" type="string" column="token" length="200" nullable="false"/>
+    <field name="mobile" type="string" column="mobile" length="100" nullable="false"/>
+    <field name="time" type="datetime" column="TIME" nullable="false"/>
+    <field name="pin" type="smallint" column="PIN" nullable="false"/>
+  </entity>
+</doctrine-mapping>

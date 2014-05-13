@@ -1,0 +1,13 @@
+{% extends 'WikiLankaWelcomeBundle:Login:parent.html.twig' %}
+{% block content %}
+<br>
+<h3 align="center" ><font color="green">Success</font></h3>
+<p align="center"><font color="green">{{message}}</font></p>
+<form class="form-4" method="GET" action="{{path('home_page')}}">
+    
+    <p>
+        <input type="submit" name="submit" value="Continue">
+    </p>
+</form>
+
+{% endblock %}

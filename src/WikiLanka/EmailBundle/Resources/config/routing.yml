@@ -1,0 +1,5 @@
+wiki_lanka_email_homepage:
+    pattern:  /hello/{name}
+    defaults: { _controller: WikiLankaEmailBundle:Default:index }
+
+

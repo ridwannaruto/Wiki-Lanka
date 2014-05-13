@@ -1,0 +1,4 @@
+home_page:
+    pattern: /home
+    defaults: { _controller: WikiLankaPCBundle:PC:home }
+    methods: 'POST'
