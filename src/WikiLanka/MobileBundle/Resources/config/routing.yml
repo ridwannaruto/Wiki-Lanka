@@ -1,0 +1,7 @@
+wiki_lanka_reg_mobile:
+    pattern:  /registerMobile
+    defaults: { _controller: WikiLankaMobileBundle:registerMobile:start }
+    
+wiki_lanka_index_mobile:
+    pattern:  /indexMobile
+    defaults: { _controller: WikiLankaMobileBundle:Index:index }
