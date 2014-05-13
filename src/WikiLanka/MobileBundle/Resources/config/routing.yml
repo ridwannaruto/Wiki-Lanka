@@ -1,0 +1,4 @@
+register_mobile:
+    pattern:  /registerMobile
+    defaults: { _controller: WikiLankaMobileBundle:Activate:activate}
+    
